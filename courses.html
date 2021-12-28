@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <title>Nanyang Technological University</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 nav-bar-custom-height fixed-top">
+        <div class="container-fluid py-0 my-0">
+                <a href="index.html" class="navbar-brand p-0"><img src="./images/ntuLOGO2.png" style="height:120px"></a>
+            <button
+                class="navbar-toggler p-0"
+                type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-0" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-dark">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link text-dark">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link text-dark">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Background image for main showcase area-->
+    <section>
+        <div id="course-main"></div>
+    </section>
+    <!--Container for drop down of courses-->
+    <section>
+        <div class="container bg-offwhite2 p-5 text-center">
+            <p style="font-size: 2.25vh; font-weight:90;">
+                Get ready for an education experience like no other. With a diverse list of programmes to choose from, pick one that best suits your interests. Our broad based curriculum gives you the option of personalising your degree with a host of minors and electives. Challenge yourself and go beyond the boundaries of your discipline to discover new courses that will open unparalleled opportunities in the professional world. Be mentored by world-renowned professors, learn alongside talented peers, discover the advantages of overseas exchange and benefit from our extensive network of academic and industry partnerships to be transformed into a truly global citizen.
+            </p>
+            <div class="row container justify-content-around p-5 mt-5" style="background: #f3f3f3; width: 80vw; height: 25vh;">
+                <select class="form-select" style="font-weight: 90; width: 30vw;">
+                    <option selected>What programme are you interested in?</option>
+                    <option value="1">Undergraduate</option>
+                    <option value="2">Graduate</option>
+                    <option value="3">Continuing Education</option>
+                </select>
+                <select class="form-select" style="font-weight: 90; width: 30vw;">
+                    <option selected>What is your interest?</option>
+                    <option value="1">Engineering</option>
+                    <option value="2">Sciences</option>
+                    <option value="3">Business</option>
+                    <option value="4">Humanitites</option>
+                    <option value="5">Social Sciences</option>
+                </select>
+                <button class="btn col-md-1 bg-crimson text-light">Search</button>
+            </div>
+            
+        </div>
+    </section>
+    <!--Sectino with more info etc-->
+    <section>
+        <div class="container-fluid bg-blue p-5">
+            <div id="carouselCoursePage" class="carousel slide m-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCoursePage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCoursePage" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCoursePage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselCoursePage" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselCoursePage" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/ntuUA.png" class="img-fluid d-block" style="width:100%, height=auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ntuGA1.png" class="img-fluid d-block" style="width:100%, height=auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ntuCE1.png" class="img-fluid d-block" style="width:100%, height=auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ntuCS1.png" class="img-fluid d-block" style="width:100%, height=auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ntuLifeatntu1.png" class="img-fluid d-block" style="width:100%, height=auto;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCoursePage" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCoursePage" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--More info about courses-->
+    <section>
+        <div class="container-fluid bg-offwhite2 p-5 justify-content-center">
+            <h3>
+                <i class="bi bi-caret-right-fill" style="color:crimson;"></i>
+                Funding your education
+            </h3>
+            <div class="row justify-content-center p-3 g-3" id="educationFinanceImg">
+                <div class="col-md-2">
+                    <img class="img-fluid" src="./images/ntuTutitionFees.png">
+                    <p class="p-2" style="font-size: 1.1vw; font-weight: 90;">
+                        More on tutitions fees for part-time anf full-time programmes.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img class="img-fluid" src="./images/ntuTuitionGrants.jpg">
+                    <p class="p-2" style="font-size: 1.1vw; font-weight: 90;">
+                        Subsidised tutitions fees to support your education journey.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img class="img-fluid" src="./images/ntuScholarships.jpg">
+                    <p class="p-2" style="font-size: 1.1vw; font-weight: 90;">
+                        NTU offers a variety of scholarships to new and current students purusing their full-time undergraduate studies based on academic merits & good co-curricular records.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="p-2 bg-blue text-dark text-center position-relative">
+        <div class="container-fluid d-flex justify-content-around">
+                <ul class="text-start" style="font-size: 2.5vh; list-style: none;">
+                    <li>Nayang Technological University</li>
+                    <li>50 Nayang Avenue, Singapore 639798</li>
+                    <li>Tel: (65) 67911744</li>
+                </ul>
+                <ul class="text-start" style="font-size: 2.5vh; list-style: none;">
+                    <li>Novena Campus</li>
+                    <li>11 Mandalay Road, Singapore 308323</li>
+                    <li>Tel: (65) 65138572</li>
+                </ul>
+            <div class="mx-auto text-start">
+                <h4>Connect with us</h4>
+                <a href="https://www.facebook.com/NTUsg/" class="p-2 footer-icon"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/ntusg" class="p-2 footer-icon"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/ntu_sg/" class="p-2 footer-icon"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/ntusg/" class="p-2 footer-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.youtube.com/user/NTUsg" class="p-2 footer-icon"><i class="bi bi-youtube"></i></a>
+                <p style="font-size:2.5vh;">Copyright &copy; 2021 Nayang Technological Univiersity</p>
+            </div>
+            <a href="#" class="footer-icon">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--NavBar Transparent script-->
+    <script>
+        var nav = document.querySelector('nav');
+        window.addEventListener('scroll', function(){
+        if(window.pageYOffset > 100){
+            nav.classList.add('nav-bg-white');
+        } else {
+            nav.classList.remove('nav-bg-white');
+        }
+    });
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>   
+</body>
+</html>

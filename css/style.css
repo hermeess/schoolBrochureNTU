@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+.bg-blue{
+    background:dodgerblue;
+}
+.bg-crimson{
+    background-color: crimson;
+    padding: 0;
+}
+.bg-offwhite{
+    background: antiquewhite; 
+}
+.bg-skyblue{
+    background: deepskyblue;
+}
+.text-offwhite{
+    color:azure;
+}
+.bg-offwhite2{
+    background: azure;
+}
+.text-orange{
+    color:#964C1D;
+}
+.nav-bg-white{
+    background: azure;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)
+}
+#main-section{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../images/ntuHive1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+    overflow:hidden;
+}
+@media screen and (min-width: 992px){
+    .nav-bar-custom-height{
+        height: 80px;
+    }
+}
+
+.nav-item{
+   color: white;
+   text-decoration: none;
+   font-size:13px;
+}
+.nav-item::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    display:block;
+    margin: auto;
+}
+.nav-item:hover::after{
+    width:100%;
+    transition: 0.5s;
+}
+
+.nav-link{
+    color: black;
+}
+.text-box{
+    color: white;
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.text-box a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 13px 34px;
+    margin: 13px;
+    cursor: pointer;
+}
+.text-box a:hover{
+    background: crimson;
+    transition: 1s;
+    border: 2px solid crimson;  
+}
+
+.box-height{
+    height: 100px;
+}
+.img-resize{
+    width: 200px;
+    height: 200px;
+}
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(256,256,256,0.6);
+}
+.card-a{
+    text-decoration: none;
+}
+.icon-resize{
+    width:60px;
+    height:60px;
+    color: black;
+    
+}
+.footer-icon{
+    color: black;
+}
+.footer-icon:hover{
+    color: lightblue
+}
+
+
+/*about page*/
+.about-main{
+    min-height:100vh;
+    width: 100%;
+    background-image: url(../images/ntuAboutPage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+}
+
+#about-links{
+    text-decoration: none;
+    color: black;
+    font-weight: 90;
+}
+
+#about-links .about-links-header{
+    color: grey;
+    font-weight: 60;
+}
+
+#about-links .about-links-title{
+    font-weight: 500;
+}
+
+#about-links:hover{
+    color: crimson;
+}
+
+/*course page*/
+#course-main{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../images/ntuCoursePage.png);
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+    overflow:hidden;
+}
+.carousel-inner img{
+    margin: auto;
+}
+
+#educationFinanceImg img {
+    width: 30vw;
+    height: 20vh;
+}
+/*news page*/
+#news-main{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../images/ntunews.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+    overflow: hidden;
+}
+.jump-marker{
+    top: -35vh;
+    position: relative;
+}
